@@ -1,0 +1,33 @@
+/* Deliberately minimal. Functionality review first, visual design later --
+   no palette, no type scale, no component styling to argue with yet. */
+* { box-sizing: border-box; }
+body { font: 14px/1.55 system-ui, -apple-system, sans-serif; margin: 0; color: #111; background: #fff; }
+main { max-width: 68rem; margin: 0 auto; padding: 1rem 1rem 4rem; }
+h1 { font-size: 1.3rem; margin: 0 0 .25rem; }
+h2 { font-size: 1.05rem; margin: 1.75rem 0 .5rem; }
+h3 { font-size: .95rem; margin: 1rem 0 .35rem; }
+p.hint { color: #666; margin: .2rem 0 1rem; }
+
+header { border-bottom: 1px solid #ccc; padding: .6rem 1rem; display: flex; gap: 1rem;
+         align-items: baseline; flex-wrap: wrap; }
+header nav { display: flex; gap: .9rem; flex-wrap: wrap; }
+header .who { margin-left: auto; color: #555; }
+
+a { color: #06c; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 1rem; }
+th, td { border: 1px solid #ccc; padding: .35rem .5rem; text-align: left; vertical-align: top; }
+th { background: #f0f0f0; font-weight: 600; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+tr.mine { background: #f7f7f7; }
+
+form.inline { display: inline; }
+button { font: inherit; padding: .2rem .5rem; cursor: pointer; }
+input, select, textarea { font: inherit; padding: .25rem; max-width: 100%; }
+fieldset { border: 1px solid #ccc; margin: 0 0 1rem; padding: .75rem; }
+legend { padding: 0 .3rem; font-weight: 600; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: .5rem; }
+.empty { color: #666; font-style: italic; }
+.err { border: 1px solid #900; padding: .5rem; margin-bottom: 1rem; }
+code { background: #f0f0f0; padding: .05rem .25rem; }
+ul.plain { list-style: none; padding: 0; }
+ul.plain li { padding: .2rem 0; border-bottom: 1px solid #eee; }
